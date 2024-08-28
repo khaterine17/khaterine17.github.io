@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B4F72;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.header li {
+    list-style: none;
+    font-size: 28px;
+    margin: 0px 15px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header img {
+    max-width: 190px;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(245, 238, 238);
+}
+
+header ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header ul li a:hover {
+    color: #E67E22; 
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.caja img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.presentacion h1 {
+    font-size: 35px;
+    color: rgb(27, 52, 2);
+}
+
+.presentacion p {
+    width: 70%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Georgia, serif;
+}
+
+.presentacion video {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.principal{
+    margin-bottom: 50px; 
+}
+
+footer {
+    background-color: rgb(110, 121, 146);
+    padding: 20px;
+    text-align: right;
+}
+
+button {
+    background-color: rgb(232, 241, 245);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.ubicacion {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 0 20px; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #bee2e2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .grid-item {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+    .grid-item {
+      flex-basis: calc(33.333% - 13.333px);
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    header ul {
+        flex-direction: row;
+        gap: 15px;
+        width: auto;
+        text-align: center;
+        text-decoration: none;
+        
+    }
+
+    header ul li {
+        display: inline;
+        text-decoration: none;
+    }
+    header ul li a {
+        text-decoration: none; 
+    }
+
+    header ul li a:hover {
+        text-decoration: none; 
+    }
+    
+    .contenedor {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .presentacion p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .caja img, .presentacion video {
+        width: 100%;
+    }
+
+    #carouselExampleControls {
+        width: 100%;
+        height: auto;
+        background-color: transparent !important;
+    }
+
+
+    #carouselExampleControls .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        background-color: transparent !important;
+    }
+}
